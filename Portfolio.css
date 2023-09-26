@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  color: #ededed;
+  background-color: rgb(3, 3, 34);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  margin-left: 140px;
+  /* opacity: 0; */
+  /* animation: slideRight 1s ease forwards; */
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 1s;
+}
+.navbar a:hover {
+  color: #0ef;
+}
+
+/* Home  */
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  /* background: url(); */
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+.home-contant {
+  max-width: 600px;
+}
+.home-contant h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.home-contant h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+.home-contant h3 span {
+  color: #0ef;
+}
+.home-contant h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+}
+.home-contant p {
+  font-size: 20px;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2ps solid #0ef;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+.home-sci a:hover {
+  background: #0ef;
+  color: rgb(5, 5, 60);
+}
+.btn-box {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: rgb(5, 5, 60) !important;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1;
+}
+.btn-box:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+.aboutimg {
+  padding-bottom: 20%;
+  max-width: 630px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+.aboutText h2 {
+  font-size: 60px;
+}
+.aboutText h2 span {
+  color: #0ef;
+}
+
+.aboutText h4 {
+  font-size: 29px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+.aboutText p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+
+/* section-3  */
+#service {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.container {
+  padding: 90px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+.sub-title span {
+  color: #0ef;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.service-list div {
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 15px #012190f7, 1px 1px 20px #0053f8f7;
+}
+.service-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.service-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service-list div p {
+  font-size: larger;
+}
+.service-list div a {
+  text-decoration: none;
+  /* color: #000000; */
+  /* color: white; */
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.read {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #081b29;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+.read:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+}
